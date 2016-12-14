@@ -34,7 +34,12 @@
 			this.warp.width(W);
 			this.slide.width(con.width());
 			for (var i = 0; i < this.slide.length; i++) {
-				this.nav.append(' <span class="slide-jd"></span> ')
+				if(i==0){
+					this.nav.append(' <span class="slide-jd slide-jd-active"></span> ')
+				}else{
+					this.nav.append(' <span class="slide-jd"></span> ')
+				}
+				
 			};
 			this.warp.append(this.slide.eq(0).clone()).prepend(this.slide.eq(this.slide.length-1).clone())
 			this.warp.css("transform","translate(-"+con.width()+"px)")
@@ -76,7 +81,8 @@
 			}, false);
 		},
 		showNav:function(){
-			this.nav.find('.slide-jd').eq(this.ind%3).addClass('slide-jd-active').siblings(".slide-jd").removeClass('slide-jd-active')
+			var sj=this.nav.find('.slide-jd');
+			sj.eq(this.ind%sj.length).addClass('slide-jd-active').siblings(".slide-jd").removeClass('slide-jd-active')
 		},
 		selectNav:function(obj){
 			this.ind=$(obj).index();
