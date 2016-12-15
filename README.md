@@ -7,7 +7,7 @@
   <script src="js/jquery-1.10.min.js"></script>
   <script src="js/slide.js"></script>
 ```
--html结构
+- html结构
 ```shell
   <div class="slide-container">
     <div class="slide-warp">
@@ -19,12 +19,12 @@
     <div class="slide-next"></div>
    </div>
 ```
--插件调用
+- 插件调用
 ```shell
 new slide('.slide-container',{
     speed:400
     //、、、、
   });
 ```
--演示地址
+- 演示地址
   https://hellosanbao.github.io/git-slide/
