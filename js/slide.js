@@ -111,5 +111,8 @@
 })(jQuery,window)
 
 $(function(){
-	new slide('.slide-container',{aa:12});
+	new slide('.slide-container',{
+		speed:400
+		//、、、、
+	});
 })
