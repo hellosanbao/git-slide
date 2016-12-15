@@ -1,13 +1,12 @@
-# 流行框架第二天：Git与Angular入门
+# Slide插件demo，初学者可以拿来练手
 
-## 复习
 
-- Node Node.js --- 类似一个操作系统
-  + 一个JS的运行环境
-  + 主要用于开发Web应用程序（回想登陆的例子）
-  + 很多的前端开发工具都是基于node这个平台
-  + 所用的工具就相当于一些软件
-
+- 使用
+```shell
+  <link rel="stylesheet" type="text/css" href="css/slide.css"/>
+  <script src="js/jquery-1.10.min.js"></script>
+  <script src="js/slide.js"></script>
+```
 - NVM （可选的）
   + Node Version Manager(Node的版本管理工具)
   + 因为node的版本比较多，很多时候我们可能依赖多个版本，并要求自由切换
